@@ -7,19 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hypothetical Investor</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>What if I bought?</h1>
-    <form id="inputForm">
-        <label for="numShares">This many shares</label>
-        <input type="text" placeholder="#" name="numShares">
-        <label for="symbol">Of this stock</label>
-        <input type="text" placeholder="Symbol" name="symbol">
-        <label for="d">On this day</label>
-        <input type="date" name="d">
-        <button>Calculate</button>
-    </form>
+    <div class="page-header">
+        <h1>What if I bought?</h1>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form id="inputForm">
+                <label for="numShares">This many shares</label>
+                <input type="text" placeholder="#" name="numShares">
+                <label for="symbol">Of this stock</label>
+                <input type="text" placeholder="Symbol" name="symbol">
+                <label for="d">On this day</label>
+                <input type="date" name="d">
+                <button type="submit" class="btn btn-primary">Calculate</button>
+            </form>
+        </div>
+    </div>
+
     <h2 id="message"></h2>
     <script src="script.js"></script>
 </body>
