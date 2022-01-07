@@ -20,12 +20,15 @@
         <div class="panel-body">
             <form id="inputForm">
                 <label for="numShares">This many shares</label>
-                <input type="text" placeholder="#" name="numShares">
+                <input type="text" placeholder="#" name="numShares" required>
+
                 <label for="symbol">Of this stock</label>
-                <input type="text" placeholder="Symbol" name="symbol">
+                <input type="text" placeholder="Symbol" name="symbol" required>
+
                 <label for="d">On this day</label>
-                <input type="date" name="d">
-                <button type="submit" class="btn btn-primary">Calculate</button>
+                <input type="date" name="d" id="myDate" required>
+
+                <button type="submit" class="btn btn-danger">Calculate</button>
             </form>
         </div>
     </div>
